@@ -1,0 +1,19 @@
+{% extends 'wiki/base.html' %}
+{% load static %}
+
+{% block content %}
+    <section class="container__block">
+        <a href="" class="block__item">
+            <img src="{% static 'wiki/images/dirt.png' %}">
+            <span>Dirt</span>
+        </a>
+        <a href="" class="block__item">
+            <img src="{% static 'wiki/images/stone.png' %}">
+            <span>Stone</span>
+        </a>
+        <a href="" class="block__item">
+            <img src="{% static 'wiki/images/glass.png' %}">
+            <span>Glass</span>
+        </a>
+    </section>
+{% endblock content %}

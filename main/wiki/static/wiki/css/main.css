@@ -1,0 +1,183 @@
+body {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden !important;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input {
+  border: none;
+  outline: none;
+  border-radius: none;
+}
+
+.btn-blue {
+  padding: 10px 16px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid inherit;
+  color: inherit;
+  text-transform: uppercase;
+  transition: boreder 0.3s, background 0.3s, color 0.3s;
+}
+
+.btn-blue {
+  border: 1px solid #00afb9;
+  background: transparent;
+  color: #00afb9;
+}
+.btn-blue:hover {
+  border: 1px solid #0081a7;
+  background: #0081a7;
+  color: white;
+}
+
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img, video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+header .topbar__logo {
+  display: block;
+}
+header .search__form {
+  display: block;
+}
+header .search__form input[type=search] {
+  width: 200px;
+  padding: 10px 12px;
+  margin-right: 5px;
+  border: 1px solid #00afb9;
+  color: #0081a7;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+header .search__form input[type=search]:focus {
+  border: 1px solid #0081a7;
+  box-shadow: 0px 0px 0px 1px #0081a7;
+}
+
+section {
+  width: 100%;
+  height: auto;
+  padding: 0px 12%;
+  margin: 20px 0px;
+  position: relative;
+}
+
+.container__block {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+.container__block .block__item {
+  width: 120px;
+  height: 120px;
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  justify-self: center;
+  transition: background 0.2s, border-radius 0.3s;
+}
+.container__block .block__item img {
+  width: 80px;
+  margin: auto;
+  z-index: 1;
+  transition: transform 0.3s ease-out;
+}
+.container__block .block__item span {
+  bottom: 3px;
+  transform: translateY(180%);
+  position: absolute;
+  color: #f07167;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  z-index: 2;
+  transition: transform 0.3s ease-out;
+}
+.container__block .block__item:hover {
+  background: #fed9b7;
+  border-radius: 15px;
+}
+.container__block .block__item:hover img {
+  transform: translateY(-10px);
+}
+.container__block .block__item:hover span {
+  transform: translateY(0px);
+}
+
+footer {
+  width: 100%;
+  padding: 5px 0px;
+  bottom: 0;
+  position: absolute;
+  color: #00afb9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=main.css.map */

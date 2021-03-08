@@ -1,0 +1,72 @@
+// Variable
+$color-cgblue: rgb(0, 129, 167);
+$color-verdigris: rgb(0, 175, 185);
+$color-light-yellow: rgb(253, 252, 220);
+$color-peach-puff: rgb(254, 217, 183);
+$color-bittersweet: rgb(240, 113, 103);
+$color-white: rgb(255, 255, 255);
+
+$font-main: 'Poppins', sans-serif;
+
+
+// Main
+body {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+
+    position: relative;
+    overflow-x: hidden !important;
+
+    font-size: 16px;
+    font-family: $font-main;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+input {
+    border: none;
+    outline: none;
+    border-radius: none;
+}
+
+
+// Button 
+%btn {
+    padding: 10px 16px;
+    cursor: pointer;
+
+    background: transparent;
+    border: 1px solid inherit;
+    
+    color: inherit;
+    text-transform: uppercase;
+
+    transition: boreder 0.3s, background 0.3s, color 0.3s;
+}
+
+.btn-blue {
+    @extend %btn;
+
+    border: 1px solid $color-verdigris;
+    background: transparent;
+
+    color: $color-verdigris;
+
+    &:hover {
+        border: 1px solid $color-cgblue;
+        background: $color-cgblue;
+        color: $color-white;
+    }
+}
+
+
+// Import 
+@import 'libs/reset.scss';
+@import 'header.scss';
+@import 'section.scss';
+@import 'footer.scss';

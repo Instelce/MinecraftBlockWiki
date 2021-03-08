@@ -1,0 +1,36 @@
+header {
+    width: 100%;
+    height: auto;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .topbar__logo {
+        display: block;
+    }
+
+    .search__form {
+        display: block;
+
+        input[type="search"] {
+            width: 200px;
+            padding: 10px 12px;
+            margin-right: 5px;
+
+            border: 1px solid $color-verdigris;
+
+            color: $color-cgblue;
+
+            transition: border 0.3s, box-shadow 0.3s;
+
+            &:focus {
+                border: 1px solid $color-cgblue;
+                box-shadow: 0px 0px 0px 1px $color-cgblue;
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Block Wiki</title>
+
+    <!-- Font LINK (Poppins) -->  
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">  
+
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="{% static 'wiki/css/main.css' %}">
+</head>
+<body>
+    <header>
+        <img class="topbar__logo" src="{% static 'wiki/images/logo.svg' %}">
+
+        <form class="search__form" action="">
+            <input type="search">
+            <input class="btn-blue" type="submit" value="Search">
+        </form>
+    </header>
+
+    {% block content %}{% endblock content %}
+
+    <footer>
+        <p>&copy; MinecraftBlockWiki</p>
+    </footer>
+</body>
+</html>
