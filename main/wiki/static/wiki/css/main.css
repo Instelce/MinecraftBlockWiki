@@ -4,6 +4,7 @@ body {
   min-height: 100vh;
   position: relative;
   overflow-x: hidden !important;
+  background: #202324;
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -27,7 +28,7 @@ input {
   border: 1px solid inherit;
   color: inherit;
   text-transform: uppercase;
-  transition: boreder 0.3s, background 0.3s, color 0.3s;
+  transition: border 0.3s, background 0.5s, color 0.3s;
 }
 
 .btn-blue {
@@ -37,8 +38,9 @@ input {
 }
 .btn-blue:hover {
   border: 1px solid #0081a7;
-  background: #0081a7;
-  color: white;
+  background: #00afb9;
+  background: linear-gradient(90deg, #00afb9 0%, #0081a7 100%);
+  color: #202324;
 }
 
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
@@ -89,6 +91,7 @@ td, th {
 header {
   width: 100%;
   height: auto;
+  margin-bottom: 40px;
   position: relative;
   display: flex;
   align-items: center;
@@ -106,6 +109,7 @@ header .search__form input[type=search] {
   padding: 10px 12px;
   margin-right: 5px;
   border: 1px solid #00afb9;
+  background: #202324;
   color: #0081a7;
   transition: border 0.3s, box-shadow 0.3s;
 }
@@ -159,7 +163,6 @@ section {
   transition: transform 0.3s ease-out;
 }
 .container__block .block__item:hover {
-  background: #fed9b7;
   border-radius: 15px;
 }
 .container__block .block__item:hover img {

@@ -5,6 +5,7 @@ $color-light-yellow: rgb(253, 252, 220);
 $color-peach-puff: rgb(254, 217, 183);
 $color-bittersweet: rgb(240, 113, 103);
 $color-white: rgb(255, 255, 255);
+$color-dark: rgb(32, 35, 36);
 
 $font-main: 'Poppins', sans-serif;
 
@@ -17,6 +18,8 @@ body {
 
     position: relative;
     overflow-x: hidden !important;
+
+    background: $color-dark;
 
     font-size: 16px;
     font-family: $font-main;
@@ -46,7 +49,7 @@ input {
     color: inherit;
     text-transform: uppercase;
 
-    transition: boreder 0.3s, background 0.3s, color 0.3s;
+    transition: border 0.3s, background 0.5s, color 0.3s;
 }
 
 .btn-blue {
@@ -59,8 +62,9 @@ input {
 
     &:hover {
         border: 1px solid $color-cgblue;
-        background: $color-cgblue;
-        color: $color-white;
+        background: rgb(0,175,185);
+        background: linear-gradient(90deg, rgba(0,175,185,1) 0%, rgba(0,129,167,1) 100%);
+        color: $color-dark;
     }
 }
 
