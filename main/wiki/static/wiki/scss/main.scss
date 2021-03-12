@@ -5,6 +5,7 @@ $color-light-yellow: rgb(253, 252, 220);
 $color-peach-puff: rgb(254, 217, 183);
 $color-bittersweet: rgb(240, 113, 103);
 $color-white: rgb(255, 255, 255);
+$color-light-white: rgba(255, 255, 255, 0.8);
 $color-dark: rgb(32, 35, 36);
 
 $font-main: 'Poppins', sans-serif;
@@ -24,6 +25,7 @@ body {
     font-size: 16px;
     font-family: $font-main;
     font-weight: 400;
+    color: $color-white;
 }
 
 a {
@@ -35,6 +37,11 @@ input {
     border: none;
     outline: none;
     border-radius: none;
+}
+
+p {
+    color: $color-light-white;
+    font-weight: 300;
 }
 
 
@@ -73,4 +80,5 @@ input {
 @import 'libs/reset.scss';
 @import 'header.scss';
 @import 'section.scss';
+@import 'block_page.scss';
 @import 'footer.scss';

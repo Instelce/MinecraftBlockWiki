@@ -1,0 +1,97 @@
+{% extends 'wiki/base.html' %}
+{% load static %}
+
+{% block content %}    
+    <div class="container">
+        <div>
+            <h1 class="block__name">Terre</h1> 
+            <span>Dirt</span>
+            <img src="{% static 'wiki/images/dirt.png' %}">
+        </div>
+
+        <p>La terre (nom anglais : dirt) est un bloc abondamment trouvé sur les cartes générées naturellement.</p>
+
+        <table class="fiche">
+            <thead>
+                <th colspan="2">Fiche d'identité</th>
+            </thead>
+            <tr>
+                <td>Gravité</td>
+                <td>non</td>
+            </tr>
+            <tr>
+                <td>Transparence</td>
+                <td>non</td>
+            </tr>
+            <tr>
+                <td>Luminosité</td>
+                <td>non</td>
+            </tr>
+            <tr>
+                <td>Résistance</td>
+                <td>0.5</td>
+            </tr>
+            <tr>
+                <td>Dureté</td>
+                <td>0.5</td>
+            </tr>
+        </table>
+
+        <div>
+            <div class="container__section">
+                <section id="obtention">
+                    <h3>Obtention</h3>
+                    <p>Un bloc de terre donnera toujours un bloc de ressource à replacer quelle que soit la façon dont il a été miné. On peut creuser la terre avec les poings, mais utiliser une pelle accélère significativement le processus de destruction. La terre est un bloc très fragile qui peut facilement être détruit avec du TNT ou par des Creepers.</p>
+
+                    <section class="sub__section">
+                        <h4>Génération naturelle</h4>
+                        <p>
+                            La terre peut être trouvée à n'importe quelle altitude et forme les couches de terrain supérieures dans la plupart des biomes du monde normal.
+                            Il y a approximativement 1 850 blocs de terre par tronçon dans les biomes plaines, forêts, toundras, jungles, et montagnes. Il peut y en avoir pas moins de 3 000 dans un tronçon de hautes montagnes. La terre se génère dans les poches souterraines également. La terre se génère aussi dans certains bâtiments des villages.
+                            La terre stérile peut être trouvée dans les taïgas à grands arbres, les savanes, et les badlands.
+                        </p>
+                    </section>
+                    <section class="sub__section">
+                        <h4>Butin</h4>
+                        <p>
+                            Lorsqu'un bloc d'herbe, de mycélium ou de podzol est détruit avec un outil dépourvu de l'enchantement Toucher de soie, ils donneront de la terre normale.
+                            La terre labourée donne de la terre normale quand elle est détruite. En outre, la terre labourée peut redevenir de la terre normale si des graines ne sont pas semées rapidement ou si elle n'est pas irriguée avec de l'eau.
+                            Si l'on utilise une houe sur de la terre stérile, elle redeviendra de la terre normale.
+                        </p>
+                    </section>
+                    <section class="sub__section">
+                        <h4>Fabrication</h4>
+                    </section>
+                </section>
+                <section id="utilisation">
+                    <h3>Utilisation</h3>
+
+                    <section class="sub__section">
+                        <h4>Agriculture</h4>
+
+                        <p>
+                            La terre est nécessaire pour faire pousser certaines plantes : les pousses d'arbre, la canne à sucre, et les champignons peuvent être directement plantés dessus.
+                            Si l'on utilise une houe sur un bloc de terre, on le laboure pour faire de la terre labourée, permettant de faire pousser des graines, des carottes, des pommes de terre. On pourra voir un changement sur la surface du dessus : le bloc perd une fine couche et la texture est sillonnée.
+                            La terre est aussi pratique pour combler des trous et l'entrée de cavernes en raison de sa facilité de minage.
+                        </p>
+                    </section>
+                    <section class="sub__section">
+                        <h4>Propagation de l'herbe et du mycélium</h4>
+
+                        <p>
+                            Le bloc d'herbe et le mycélium peuvent se propager sur la terre. Si un bloc de terre exposé à un niveau de lumière supérieur ou égal à 4 est adjacent à un bloc d'herbe, il se transformera à son tour en bloc d'herbe au bout de quelque temps. De même, un bloc de terre exposé à un niveau de lumière supérieur à 9 peut se transformer en bloc de mycélium.
+                            Ni le bloc d'herbe ni le mycélium ne peuvent se propager sur la terre stérile.
+                        </p>
+                    </section>
+                </section>
+            </div>
+
+            <div class="summary">
+                <h3>Sommaire</h3>
+                <a href="">Obtention</a>
+                <a href="">Utilisation</a>
+                <a href="">Références</a>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

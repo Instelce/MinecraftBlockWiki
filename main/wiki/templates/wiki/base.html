@@ -18,7 +18,7 @@
 </head>
 <body>
     <header>
-        <img class="topbar__logo" src="{% static 'wiki/images/logo.svg' %}">
+        <a href="{% url 'wiki:home' %}"><img class="topbar__logo" src="{% static 'wiki/images/logo.svg' %}"></a>
 
         <form class="search__form" action="">
             <input type="search">
